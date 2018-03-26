@@ -1,18 +1,18 @@
-import cuentas.cuentaDePepe
+import cuentas.cuentaPepe
 
 describe "cuenta de pepe" {
 	test "el saldo inicial es 0" {
-		assert.equals(0, cuentaDePepe.saldo())
+		assert.equals(0, cuentaPepe.saldo())
 	}
 	
 	test "depositar" {
-		cuentaDePepe.depositar(100)
-		assert.equals(100, cuentaDePepe.saldo())
+		cuentaPepe.depositar(100)
+		assert.equals(100, cuentaPepe.saldo())
 	}
 
 	test "extraer" {
-		cuentaDePepe.depositar(100)
-		cuentaDePepe.extraer(20)
-		assert.equals(80, cuentaDePepe.saldo())
+		cuentaPepe.depositar(100)
+		cuentaPepe.extraer(20)
+		assert.equals(80, cuentaPepe.saldo())
 	}
 }
